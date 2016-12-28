@@ -17,7 +17,7 @@ Just copy the PRGLocationSearchBar folder into your project
 - You can programmatically add the search bar by using init(frame:) method.
 
 #### PRGLocationSearchBarDelegate (all methods are optional)
-
+```swift
 	func locationSearchBar(searchBar: PRGLocationSearchBar, didTapLocationButton: UIButton) {
         print("Location Button Tapped")
     }
@@ -46,7 +46,7 @@ Just copy the PRGLocationSearchBar folder into your project
     func locationSearchBar(searchBar: PRGLocationSearchBar, didFailToFindLocationWith error: Error) {
         print(error.localizedDescription)
     }
-
+```
 Contact
 -------
 jspiropoulos@programize.com
