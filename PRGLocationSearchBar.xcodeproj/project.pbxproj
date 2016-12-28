@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12D253771E13A9E0002DDBF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253761E13A9E0002DDBF3 /* AppDelegate.swift */; };
+		12D253791E13A9E0002DDBF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253781E13A9E0002DDBF3 /* ViewController.swift */; };
+		12D2537C1E13A9E0002DDBF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D2537A1E13A9E0002DDBF3 /* Main.storyboard */; };
+		12D2537E1E13A9E0002DDBF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D2537D1E13A9E0002DDBF3 /* Assets.xcassets */; };
+		12D253811E13A9E0002DDBF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D2537F1E13A9E0002DDBF3 /* LaunchScreen.storyboard */; };
+		12D2538C1E13A9E0002DDBF3 /* PRGLocationSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2538B1E13A9E0002DDBF3 /* PRGLocationSearchBarTests.swift */; };
+		12D253971E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253961E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift */; };
+		12D253A71E13AA6B002DDBF3 /* PRGLocationSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253A51E13AA6A002DDBF3 /* PRGLocationSearchBar.swift */; };
+		12D253A81E13AA6B002DDBF3 /* PRGLocationSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D253A61E13AA6B002DDBF3 /* PRGLocationSearchBar.xib */; };
+		12D253AB1E13AEA6002DDBF3 /* LocationArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D253A91E13AEA6002DDBF3 /* LocationArrow.png */; };
+		12D253AC1E13AEA6002DDBF3 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D253AA1E13AEA6002DDBF3 /* Search.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12D253881E13A9E0002DDBF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D2536B1E13A9E0002DDBF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D253721E13A9E0002DDBF3;
+			remoteInfo = PRGLocationSearchBar;
+		};
+		12D253931E13A9E0002DDBF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D2536B1E13A9E0002DDBF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D253721E13A9E0002DDBF3;
+			remoteInfo = PRGLocationSearchBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12D253731E13A9E0002DDBF3 /* PRGLocationSearchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRGLocationSearchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D253761E13A9E0002DDBF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12D253781E13A9E0002DDBF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12D2537B1E13A9E0002DDBF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12D2537D1E13A9E0002DDBF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12D253801E13A9E0002DDBF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12D253821E13A9E0002DDBF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D253871E13A9E0002DDBF3 /* PRGLocationSearchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRGLocationSearchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D2538B1E13A9E0002DDBF3 /* PRGLocationSearchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRGLocationSearchBarTests.swift; sourceTree = "<group>"; };
+		12D2538D1E13A9E0002DDBF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D253921E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRGLocationSearchBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D253961E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRGLocationSearchBarUITests.swift; sourceTree = "<group>"; };
+		12D253981E13A9E0002DDBF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D253A51E13AA6A002DDBF3 /* PRGLocationSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGLocationSearchBar.swift; sourceTree = "<group>"; };
+		12D253A61E13AA6B002DDBF3 /* PRGLocationSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRGLocationSearchBar.xib; sourceTree = "<group>"; };
+		12D253A91E13AEA6002DDBF3 /* LocationArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationArrow.png; sourceTree = "<group>"; };
+		12D253AA1E13AEA6002DDBF3 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12D253701E13A9E0002DDBF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D253841E13A9E0002DDBF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D2538F1E13A9E0002DDBF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D2536A1E13A9E0002DDBF3 = {
+			isa = PBXGroup;
+			children = (
+				12D253751E13A9E0002DDBF3 /* PRGLocationSearchBar */,
+				12D2538A1E13A9E0002DDBF3 /* PRGLocationSearchBarTests */,
+				12D253951E13A9E0002DDBF3 /* PRGLocationSearchBarUITests */,
+				12D253741E13A9E0002DDBF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12D253741E13A9E0002DDBF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12D253731E13A9E0002DDBF3 /* PRGLocationSearchBar.app */,
+				12D253871E13A9E0002DDBF3 /* PRGLocationSearchBarTests.xctest */,
+				12D253921E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12D253751E13A9E0002DDBF3 /* PRGLocationSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				12D253A41E13AA6A002DDBF3 /* PRGLocationSearchBar */,
+				12D253761E13A9E0002DDBF3 /* AppDelegate.swift */,
+				12D253781E13A9E0002DDBF3 /* ViewController.swift */,
+				12D2537A1E13A9E0002DDBF3 /* Main.storyboard */,
+				12D2537D1E13A9E0002DDBF3 /* Assets.xcassets */,
+				12D2537F1E13A9E0002DDBF3 /* LaunchScreen.storyboard */,
+				12D253821E13A9E0002DDBF3 /* Info.plist */,
+			);
+			path = PRGLocationSearchBar;
+			sourceTree = "<group>";
+		};
+		12D2538A1E13A9E0002DDBF3 /* PRGLocationSearchBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				12D2538B1E13A9E0002DDBF3 /* PRGLocationSearchBarTests.swift */,
+				12D2538D1E13A9E0002DDBF3 /* Info.plist */,
+			);
+			path = PRGLocationSearchBarTests;
+			sourceTree = "<group>";
+		};
+		12D253951E13A9E0002DDBF3 /* PRGLocationSearchBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12D253961E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift */,
+				12D253981E13A9E0002DDBF3 /* Info.plist */,
+			);
+			path = PRGLocationSearchBarUITests;
+			sourceTree = "<group>";
+		};
+		12D253A41E13AA6A002DDBF3 /* PRGLocationSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				12D253A91E13AEA6002DDBF3 /* LocationArrow.png */,
+				12D253AA1E13AEA6002DDBF3 /* Search.png */,
+				12D253A51E13AA6A002DDBF3 /* PRGLocationSearchBar.swift */,
+				12D253A61E13AA6B002DDBF3 /* PRGLocationSearchBar.xib */,
+			);
+			path = PRGLocationSearchBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12D253721E13A9E0002DDBF3 /* PRGLocationSearchBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D2539B1E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBar" */;
+			buildPhases = (
+				12D2536F1E13A9E0002DDBF3 /* Sources */,
+				12D253701E13A9E0002DDBF3 /* Frameworks */,
+				12D253711E13A9E0002DDBF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRGLocationSearchBar;
+			productName = PRGLocationSearchBar;
+			productReference = 12D253731E13A9E0002DDBF3 /* PRGLocationSearchBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12D253861E13A9E0002DDBF3 /* PRGLocationSearchBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D2539E1E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBarTests" */;
+			buildPhases = (
+				12D253831E13A9E0002DDBF3 /* Sources */,
+				12D253841E13A9E0002DDBF3 /* Frameworks */,
+				12D253851E13A9E0002DDBF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D253891E13A9E0002DDBF3 /* PBXTargetDependency */,
+			);
+			name = PRGLocationSearchBarTests;
+			productName = PRGLocationSearchBarTests;
+			productReference = 12D253871E13A9E0002DDBF3 /* PRGLocationSearchBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12D253911E13A9E0002DDBF3 /* PRGLocationSearchBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D253A11E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBarUITests" */;
+			buildPhases = (
+				12D2538E1E13A9E0002DDBF3 /* Sources */,
+				12D2538F1E13A9E0002DDBF3 /* Frameworks */,
+				12D253901E13A9E0002DDBF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D253941E13A9E0002DDBF3 /* PBXTargetDependency */,
+			);
+			name = PRGLocationSearchBarUITests;
+			productName = PRGLocationSearchBarUITests;
+			productReference = 12D253921E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12D2536B1E13A9E0002DDBF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Programize;
+				TargetAttributes = {
+					12D253721E13A9E0002DDBF3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					12D253861E13A9E0002DDBF3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 12D253721E13A9E0002DDBF3;
+					};
+					12D253911E13A9E0002DDBF3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 12D253721E13A9E0002DDBF3;
+					};
+				};
+			};
+			buildConfigurationList = 12D2536E1E13A9E0002DDBF3 /* Build configuration list for PBXProject "PRGLocationSearchBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12D2536A1E13A9E0002DDBF3;
+			productRefGroup = 12D253741E13A9E0002DDBF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12D253721E13A9E0002DDBF3 /* PRGLocationSearchBar */,
+				12D253861E13A9E0002DDBF3 /* PRGLocationSearchBarTests */,
+				12D253911E13A9E0002DDBF3 /* PRGLocationSearchBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12D253711E13A9E0002DDBF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D253811E13A9E0002DDBF3 /* LaunchScreen.storyboard in Resources */,
+				12D253AC1E13AEA6002DDBF3 /* Search.png in Resources */,
+				12D2537E1E13A9E0002DDBF3 /* Assets.xcassets in Resources */,
+				12D253AB1E13AEA6002DDBF3 /* LocationArrow.png in Resources */,
+				12D253A81E13AA6B002DDBF3 /* PRGLocationSearchBar.xib in Resources */,
+				12D2537C1E13A9E0002DDBF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D253851E13A9E0002DDBF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D253901E13A9E0002DDBF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12D2536F1E13A9E0002DDBF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D253791E13A9E0002DDBF3 /* ViewController.swift in Sources */,
+				12D253771E13A9E0002DDBF3 /* AppDelegate.swift in Sources */,
+				12D253A71E13AA6B002DDBF3 /* PRGLocationSearchBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D253831E13A9E0002DDBF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D2538C1E13A9E0002DDBF3 /* PRGLocationSearchBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D2538E1E13A9E0002DDBF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D253971E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12D253891E13A9E0002DDBF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12D253721E13A9E0002DDBF3 /* PRGLocationSearchBar */;
+			targetProxy = 12D253881E13A9E0002DDBF3 /* PBXContainerItemProxy */;
+		};
+		12D253941E13A9E0002DDBF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12D253721E13A9E0002DDBF3 /* PRGLocationSearchBar */;
+			targetProxy = 12D253931E13A9E0002DDBF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12D2537A1E13A9E0002DDBF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D2537B1E13A9E0002DDBF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12D2537F1E13A9E0002DDBF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D253801E13A9E0002DDBF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12D253991E13A9E0002DDBF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12D2539A1E13A9E0002DDBF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12D2539C1E13A9E0002DDBF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PRGLocationSearchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.programize.PRGLocationSearchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		12D2539D1E13A9E0002DDBF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PRGLocationSearchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.programize.PRGLocationSearchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		12D2539F1E13A9E0002DDBF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PRGLocationSearchBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.programize.PRGLocationSearchBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRGLocationSearchBar.app/PRGLocationSearchBar";
+			};
+			name = Debug;
+		};
+		12D253A01E13A9E0002DDBF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PRGLocationSearchBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.programize.PRGLocationSearchBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRGLocationSearchBar.app/PRGLocationSearchBar";
+			};
+			name = Release;
+		};
+		12D253A21E13A9E0002DDBF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PRGLocationSearchBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.programize.PRGLocationSearchBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PRGLocationSearchBar;
+			};
+			name = Debug;
+		};
+		12D253A31E13A9E0002DDBF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PRGLocationSearchBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.programize.PRGLocationSearchBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PRGLocationSearchBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D2536E1E13A9E0002DDBF3 /* Build configuration list for PBXProject "PRGLocationSearchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D253991E13A9E0002DDBF3 /* Debug */,
+				12D2539A1E13A9E0002DDBF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D2539B1E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D2539C1E13A9E0002DDBF3 /* Debug */,
+				12D2539D1E13A9E0002DDBF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12D2539E1E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D2539F1E13A9E0002DDBF3 /* Debug */,
+				12D253A01E13A9E0002DDBF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12D253A11E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D253A21E13A9E0002DDBF3 /* Debug */,
+				12D253A31E13A9E0002DDBF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12D2536B1E13A9E0002DDBF3 /* Project object */;
+}
