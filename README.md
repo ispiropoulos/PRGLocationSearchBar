@@ -18,34 +18,37 @@ Just copy the PRGLocationSearchBar folder into your project
 
 #### PRGLocationSearchBarDelegate (all methods are optional)
 ```swift
-	func locationSearchBar(searchBar: PRGLocationSearchBar, didTapLocationButton: UIButton) {
-        print("Location Button Tapped")
+func locationSearchBar(searchBar: PRGLocationSearchBar, didTapLocationButton: UIButton) {
+	print("Location Button Tapped")
+}
+ ``` 
+ ```swift
+func locationSearchBar(searchBar: PRGLocationSearchBar, didTapSearchButton: UIButton, withSearchString searchString: String) {
+    print("Search Button Tapped")
+}
+  ```
+ ```swift
+func locationSearchBar(searchBar: PRGLocationSearchBar, didFindLocationWith lat: Double, lon: Double, address: Dictionary<AnyHashable, Any>?) {
+    print(“COORDINATE\nLat: \(lat)\nLon:\(lon)”)
+    for key in address!.keys where address != nil {
+        print(“\(key): \(address![key]!)\n")
     }
-    
-    func locationSearchBar(searchBar: PRGLocationSearchBar, didTapSearchButton: UIButton, withSearchString searchString: String) {
-        print("Search Button Tapped")
-    }
-    
-   
-    func locationSearchBar(searchBar: PRGLocationSearchBar, didFindLocationWith lat: Double, lon: Double, address: Dictionary<AnyHashable, Any>?) {
-        print(“COORDINATE\nLat: \(lat)\nLon:\(lon)”)
-       
-        for key in address!.keys where address != nil {
-            print(“\(key): \(address![key]!)\n")
-        }
-    }
-
-    func locationSearchBar(searchBar: PRGLocationSearchBar, didEditSearchTextWith text: String) {
-        print(text)
-    }
-    
-    func locationSearchBar(searchBar: PRGLocationSearchBar, didStartEditingTextField textField: UITextField) {
-        print("Started editing search field")
-    }
-    
-    func locationSearchBar(searchBar: PRGLocationSearchBar, didFailToFindLocationWith error: Error) {
-        print(error.localizedDescription)
-    }
+}
+```
+```swift
+func locationSearchBar(searchBar: PRGLocationSearchBar, didEditSearchTextWith text: String) {
+    print(text)
+}
+```
+```swift
+func locationSearchBar(searchBar: PRGLocationSearchBar, didStartEditingTextField textField: UITextField) {
+    print("Started editing search field")
+}
+```
+```swift
+func locationSearchBar(searchBar: PRGLocationSearchBar, didFailToFindLocationWith error: Error) {
+    print(error.localizedDescription)
+}
 ```
 Contact
 -------
