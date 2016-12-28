@@ -1,4 +1,4 @@
-PRGSearchBar
+PRGLocationSearchBar
 =========
 
 Control used to show a search bar which can fetch your location as well as geocode a search string
