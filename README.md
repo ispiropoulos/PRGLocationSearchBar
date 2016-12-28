@@ -2,13 +2,19 @@ PRGLocationSearchBar
 =========
 
 Control used to show a search bar which can fetch your location as well as geocode a search string
+## Demo
+![PRGLocationSearchBar](https://github.com/ispiropoulos/PRGLocationSearchBar/blob/master/Demo.gif?raw=true)
+
+## Requirements
+iOS >= 9.x
+Swift 3.0
 
 ## Installation
 Just copy the PRGLocationSearchBar folder into your project
     
 ## Usage
 - Drag a UIView using interface builder and set it’s class to PRGLocationSearchBar
-- You can programmatically add the search bear by using init(frame:) method.
+- You can programmatically add the search bar by using init(frame:) method.
 
 #### PRGLocationSearchBarDelegate (all methods are optional)
 
@@ -40,10 +46,6 @@ Just copy the PRGLocationSearchBar folder into your project
     func locationSearchBar(searchBar: PRGLocationSearchBar, didFailToFindLocationWith error: Error) {
         print(error.localizedDescription)
     }
-
-Requirements
-------------
-iOS >= 9.x
 
 Contact
 -------
