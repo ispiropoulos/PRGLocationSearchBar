@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PRGLocationSearchBar/PRGLocationSearchBar/PRGLocationSearchBar.swift"
-            timestampString = "511608186.628172"
+            timestampString = "511609042.663988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "geocode(withLocation:withSearchString:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PRGLocationSearchBar/PRGLocationSearchBar/PRGLocationSearchBar.swift"
-            timestampString = "511608186.628172"
+            timestampString = "511609042.663988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "geocode(withLocation:withSearchString:)"
             landmarkType = "7">
          </BreakpointContent>

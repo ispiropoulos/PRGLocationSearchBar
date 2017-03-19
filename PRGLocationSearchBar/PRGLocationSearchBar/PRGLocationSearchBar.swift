@@ -31,6 +31,16 @@ class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelega
         }
     }
     
+    @IBInspectable var textFont: String = "HelveticaNeue-Regular*20" {
+        didSet {
+            if textFont.components(separatedBy: "*").count == 2 {
+               let fontAttrs = textFont.components(separatedBy: ",")
+                if let size = Int(fontAttrs[1]), let font = UIFont(name: fontAttrs[0], size: CGFloat(size)) {
+                    searchField.font = font
+                }
+            }
+        }
+    }
    
     var locationButton: UIButton!
     var searchField: UITextField!
