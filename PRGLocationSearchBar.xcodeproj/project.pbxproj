@@ -9,15 +9,18 @@
 /* Begin PBXBuildFile section */
 		12D253771E13A9E0002DDBF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253761E13A9E0002DDBF3 /* AppDelegate.swift */; };
 		12D253791E13A9E0002DDBF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253781E13A9E0002DDBF3 /* ViewController.swift */; };
-		12D2537C1E13A9E0002DDBF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D2537A1E13A9E0002DDBF3 /* Main.storyboard */; };
 		12D2537E1E13A9E0002DDBF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D2537D1E13A9E0002DDBF3 /* Assets.xcassets */; };
 		12D253811E13A9E0002DDBF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D2537F1E13A9E0002DDBF3 /* LaunchScreen.storyboard */; };
 		12D2538C1E13A9E0002DDBF3 /* PRGLocationSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2538B1E13A9E0002DDBF3 /* PRGLocationSearchBarTests.swift */; };
 		12D253971E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253961E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift */; };
 		12D253A71E13AA6B002DDBF3 /* PRGLocationSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D253A51E13AA6A002DDBF3 /* PRGLocationSearchBar.swift */; };
-		12D253A81E13AA6B002DDBF3 /* PRGLocationSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D253A61E13AA6B002DDBF3 /* PRGLocationSearchBar.xib */; };
-		12D253AB1E13AEA6002DDBF3 /* LocationArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D253A91E13AEA6002DDBF3 /* LocationArrow.png */; };
-		12D253AC1E13AEA6002DDBF3 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D253AA1E13AEA6002DDBF3 /* Search.png */; };
+		12EE558C1E7E804B002F8C2D /* LocationArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EE55861E7E804B002F8C2D /* LocationArrow.png */; };
+		12EE558D1E7E804B002F8C2D /* LocationArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EE55871E7E804B002F8C2D /* LocationArrow@2x.png */; };
+		12EE558E1E7E804B002F8C2D /* LocationArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EE55881E7E804B002F8C2D /* LocationArrow@3x.png */; };
+		12EE558F1E7E804B002F8C2D /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EE55891E7E804B002F8C2D /* Search.png */; };
+		12EE55901E7E804B002F8C2D /* Search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EE558A1E7E804B002F8C2D /* Search@2x.png */; };
+		12EE55911E7E804B002F8C2D /* Search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EE558B1E7E804B002F8C2D /* Search@3x.png */; };
+		12EE55931E7E8244002F8C2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12EE55921E7E8244002F8C2D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,6 @@
 		12D253731E13A9E0002DDBF3 /* PRGLocationSearchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRGLocationSearchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D253761E13A9E0002DDBF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12D253781E13A9E0002DDBF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		12D2537B1E13A9E0002DDBF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12D2537D1E13A9E0002DDBF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D253801E13A9E0002DDBF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12D253821E13A9E0002DDBF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +54,13 @@
 		12D253961E13A9E0002DDBF3 /* PRGLocationSearchBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRGLocationSearchBarUITests.swift; sourceTree = "<group>"; };
 		12D253981E13A9E0002DDBF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12D253A51E13AA6A002DDBF3 /* PRGLocationSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGLocationSearchBar.swift; sourceTree = "<group>"; };
-		12D253A61E13AA6B002DDBF3 /* PRGLocationSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRGLocationSearchBar.xib; sourceTree = "<group>"; };
-		12D253A91E13AEA6002DDBF3 /* LocationArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationArrow.png; sourceTree = "<group>"; };
-		12D253AA1E13AEA6002DDBF3 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
+		12EE55861E7E804B002F8C2D /* LocationArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationArrow.png; sourceTree = "<group>"; };
+		12EE55871E7E804B002F8C2D /* LocationArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LocationArrow@2x.png"; sourceTree = "<group>"; };
+		12EE55881E7E804B002F8C2D /* LocationArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LocationArrow@3x.png"; sourceTree = "<group>"; };
+		12EE55891E7E804B002F8C2D /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
+		12EE558A1E7E804B002F8C2D /* Search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search@2x.png"; sourceTree = "<group>"; };
+		12EE558B1E7E804B002F8C2D /* Search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search@3x.png"; sourceTree = "<group>"; };
+		12EE55921E7E8244002F8C2D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +114,10 @@
 				12D253A41E13AA6A002DDBF3 /* PRGLocationSearchBar */,
 				12D253761E13A9E0002DDBF3 /* AppDelegate.swift */,
 				12D253781E13A9E0002DDBF3 /* ViewController.swift */,
-				12D2537A1E13A9E0002DDBF3 /* Main.storyboard */,
 				12D2537D1E13A9E0002DDBF3 /* Assets.xcassets */,
 				12D2537F1E13A9E0002DDBF3 /* LaunchScreen.storyboard */,
 				12D253821E13A9E0002DDBF3 /* Info.plist */,
+				12EE55921E7E8244002F8C2D /* Main.storyboard */,
 			);
 			path = PRGLocationSearchBar;
 			sourceTree = "<group>";
@@ -137,12 +143,23 @@
 		12D253A41E13AA6A002DDBF3 /* PRGLocationSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				12D253A91E13AEA6002DDBF3 /* LocationArrow.png */,
-				12D253AA1E13AEA6002DDBF3 /* Search.png */,
+				12DA9CB31E7E7FEB000E6F58 /* Images */,
 				12D253A51E13AA6A002DDBF3 /* PRGLocationSearchBar.swift */,
-				12D253A61E13AA6B002DDBF3 /* PRGLocationSearchBar.xib */,
 			);
 			path = PRGLocationSearchBar;
+			sourceTree = "<group>";
+		};
+		12DA9CB31E7E7FEB000E6F58 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				12EE55861E7E804B002F8C2D /* LocationArrow.png */,
+				12EE55871E7E804B002F8C2D /* LocationArrow@2x.png */,
+				12EE55881E7E804B002F8C2D /* LocationArrow@3x.png */,
+				12EE55891E7E804B002F8C2D /* Search.png */,
+				12EE558A1E7E804B002F8C2D /* Search@2x.png */,
+				12EE558B1E7E804B002F8C2D /* Search@3x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,12 +269,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12EE55901E7E804B002F8C2D /* Search@2x.png in Resources */,
+				12EE558C1E7E804B002F8C2D /* LocationArrow.png in Resources */,
+				12EE55931E7E8244002F8C2D /* Main.storyboard in Resources */,
 				12D253811E13A9E0002DDBF3 /* LaunchScreen.storyboard in Resources */,
-				12D253AC1E13AEA6002DDBF3 /* Search.png in Resources */,
+				12EE558E1E7E804B002F8C2D /* LocationArrow@3x.png in Resources */,
 				12D2537E1E13A9E0002DDBF3 /* Assets.xcassets in Resources */,
-				12D253AB1E13AEA6002DDBF3 /* LocationArrow.png in Resources */,
-				12D253A81E13AA6B002DDBF3 /* PRGLocationSearchBar.xib in Resources */,
-				12D2537C1E13A9E0002DDBF3 /* Main.storyboard in Resources */,
+				12EE55911E7E804B002F8C2D /* Search@3x.png in Resources */,
+				12EE558F1E7E804B002F8C2D /* Search.png in Resources */,
+				12EE558D1E7E804B002F8C2D /* LocationArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,14 +340,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		12D2537A1E13A9E0002DDBF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12D2537B1E13A9E0002DDBF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		12D2537F1E13A9E0002DDBF3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -529,6 +541,7 @@
 				12D2539D1E13A9E0002DDBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12D2539E1E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBarTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +550,7 @@
 				12D253A01E13A9E0002DDBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12D253A11E13A9E0002DDBF3 /* Build configuration list for PBXNativeTarget "PRGLocationSearchBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +559,7 @@
 				12D253A31E13A9E0002DDBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

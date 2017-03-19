@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="arc-Hd-XvR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mD8-UL-dyi">
+            <objects>
+                <viewController id="arc-Hd-XvR" customClass="ViewController" customModule="PRGLocationSearchBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hoZ-Ex-G7R"/>
+                        <viewControllerLayoutGuide type="bottom" id="lxj-ey-yiD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z9Q-8H-sHj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="La9-GK-sFE" customClass="PRGLocationSearchBar" customModule="PRGLocationSearchBar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="335" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yoO-lP-9h8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-YX-pKw">
+                                <rect key="frame" x="20" y="88" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3D-ec-Xuf">
+                                <rect key="frame" x="20" y="108" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90337859151472999" green="0.95630146205715061" blue="0.97392578124999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JF5-YX-pKw" firstAttribute="leading" secondItem="z9Q-8H-sHj" secondAttribute="leading" constant="20" id="0hH-Kg-gkE"/>
+                            <constraint firstItem="JF5-YX-pKw" firstAttribute="top" secondItem="La9-GK-sFE" secondAttribute="bottom" constant="20" id="2fp-5N-chP"/>
+                            <constraint firstAttribute="trailing" secondItem="s3D-ec-Xuf" secondAttribute="trailing" constant="20" id="3wg-Db-jmc"/>
+                            <constraint firstAttribute="trailing" secondItem="La9-GK-sFE" secondAttribute="trailing" constant="20" id="5c6-Tg-cbm"/>
+                            <constraint firstItem="La9-GK-sFE" firstAttribute="leading" secondItem="z9Q-8H-sHj" secondAttribute="leading" constant="20" id="K7c-AC-GCp"/>
+                            <constraint firstItem="s3D-ec-Xuf" firstAttribute="top" secondItem="JF5-YX-pKw" secondAttribute="bottom" constant="20" id="M8p-K7-6KF"/>
+                            <constraint firstItem="s3D-ec-Xuf" firstAttribute="leading" secondItem="z9Q-8H-sHj" secondAttribute="leading" constant="20" id="aLR-Lf-faS"/>
+                            <constraint firstItem="La9-GK-sFE" firstAttribute="top" secondItem="hoZ-Ex-G7R" secondAttribute="bottom" constant="8" id="gKc-FO-REL"/>
+                            <constraint firstAttribute="trailing" secondItem="JF5-YX-pKw" secondAttribute="trailing" constant="20" id="hgU-jn-C27"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="s3D-ec-Xuf" id="7Oy-U0-0iA"/>
+                        <outlet property="coordinateLabel" destination="JF5-YX-pKw" id="lml-0W-TRj"/>
+                        <outlet property="searchBar" destination="La9-GK-sFE" id="JVD-0p-W6p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bc7-B7-I2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453.60000000000002" y="-69.715142428785612"/>
+        </scene>
+    </scenes>
+</document>

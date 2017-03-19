@@ -1,6 +1,6 @@
 //
 //  PRGLocationSearchBar.swift
-//  GRGiOS
+//  
 //
 //  Created by John Spiropoulos on 28/12/2016.
 //  Copyright © 2016 Programize. All rights reserved.
@@ -21,17 +21,20 @@ import CoreLocation
 @IBDesignable
 class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelegate {
     
-    var view: UIView!
     
-    @IBInspectable var cornerRadius: CGFloat = 0.0 {
-        didSet {
-            self.layer.cornerRadius = cornerRadius
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
         }
     }
     
-    @IBOutlet weak var locationButton: UIButton!
-    @IBOutlet weak var searchField: UITextField!
-    @IBOutlet weak var searchButton: UIButton!
+   
+    var locationButton: UIButton!
+    var searchField: UITextField!
+    var searchButton: UIButton!
     
     lazy var geoCoder = CLGeocoder()
     
@@ -50,49 +53,76 @@ class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelega
     weak var delegate: PRGLocationSearchBarDelegate?
     
     override init(frame: CGRect) {
-        // 1. setup any properties here
-        
-        // 2. call super.init(frame:)
         super.init(frame: frame)
-        backgroundColor = .white
-
-        // 3. Setup view from .xib file
-        xibSetup()
+        customInit()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        // 1. setup any properties here
-        
-        // 2. call super.init(coder:)
         super.init(coder: aDecoder)
-        
-        // 3. Setup view from .xib file
-        xibSetup()
+        customInit()
     }
     
-    func xibSetup() {
-        view = loadViewFromNib()
+    
+    func customInit(){
+        autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        backgroundColor = .white
         
-        // use bounds not frame or it'll be offset
-        view.frame = bounds
+        // Location Button
+        locationButton = UIButton()
+
+
+        let locationArrowImage = UIImage(named: "LocationArrow", in: Bundle(for: type(of: self)), compatibleWith: nil)
+        locationButton.setImage(locationArrowImage, for: .normal)
+        locationButton.addTarget(self, action: #selector(locationButtonTapped(_:)), for: .touchUpInside)
+        addSubview(locationButton)
         
-        // Make the view stretch with containing view
-        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        locationButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        // Search Field
+        searchField = UITextField()
+        
+        searchField.borderStyle = .none
+        addSubview(searchField)
+        
+        searchField.translatesAutoresizingMaskIntoConstraints = false
+        searchField.addTarget(self, action: #selector(searchFieldEdited(_:)), for: .editingChanged)
+        searchField.addTarget(self, action: #selector(searchFieldBeganEditing(_:)), for: .editingDidBegin)
         searchField.returnKeyType = .search
         searchField.delegate = self
+
         
-        // Adding custom subview on top of our view (over any custom drawing > see note below)
-        addSubview(view)
+        // Search Button
+        searchButton = UIButton()
+
+        let searchImage = UIImage(named: "Search", in: Bundle(for: type(of: self)), compatibleWith: nil)
+
+        searchButton.setImage(searchImage, for: .normal)
+        searchButton.addTarget(self, action: #selector(searchButtonTapped(_:)), for: .touchUpInside)
+        addSubview(searchButton)
+        searchButton.translatesAutoresizingMaskIntoConstraints = false
+        
         
     }
     
-    func loadViewFromNib() -> UIView {
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "PRGLocationSearchBar", bundle: bundle)
-        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        locationButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
+        locationButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        locationButton.widthAnchor.constraint(equalToConstant: 29).isActive = true
+        locationButton.heightAnchor.constraint(equalToConstant: 29).isActive = true
         
-        return view
+        searchField.leadingAnchor.constraint(equalTo: locationButton.trailingAnchor, constant: 8).isActive = true
+        searchField.topAnchor.constraint(equalTo: topAnchor, constant: 4).isActive = true
+        searchField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
+
+        searchButton.leftAnchor.constraint(equalTo: searchField.rightAnchor, constant: 8).isActive = true
+        searchButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -8).isActive = true
+        searchButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        searchButton.widthAnchor.constraint(equalToConstant: 29).isActive = true
+        searchButton.heightAnchor.constraint(equalToConstant: 29).isActive = true
+
     }
     
     // MARK: - Search Field Delegate
@@ -104,20 +134,18 @@ class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelega
     
     // MARK: - Tap Actions
     
-    @IBAction func locationButtonTapped(_ sender: UIButton) {
+   func locationButtonTapped(_ sender: UIButton) {
         if areLocationPermissionsAvailable() {
-            view.endEditing(true)
-            if delegate != nil {
-                delegate!.locationSearchBar?(searchBar: self, didTapLocationButton: sender)
-            }
+            endEditing(true)
+            delegate?.locationSearchBar?(searchBar: self, didTapLocationButton: sender)
             locationManager?.requestLocation()
         }
     }
     
-    @IBAction func searchButtonTapped(_ sender: UIButton) {
+    func searchButtonTapped(_ sender: UIButton) {
         if searchField.isFirstResponder {
-            view.endEditing(true)
-            delegate!.locationSearchBar?(searchBar: self, didTapSearchButton: sender, withSearchString: searchField.text!)
+            endEditing(true)
+            delegate?.locationSearchBar?(searchBar: self, didTapSearchButton: sender, withSearchString: searchField.text!)
             
             if searchField.text != "" {
                 geocode(withLocation: nil, withSearchString: searchField.text!)
@@ -128,16 +156,12 @@ class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelega
         
     }
     
-    @IBAction func searchFieldBeganEditing(_ sender: UITextField) {
-        if delegate != nil {
-            delegate!.locationSearchBar?(searchBar: self, didStartEditingTextField: sender)
-        }
+    func searchFieldBeganEditing(_ sender: UITextField) {
+            delegate?.locationSearchBar?(searchBar: self, didStartEditingTextField: sender)
     }
     
-    @IBAction func searchFieldEdited(_ sender: UITextField) {
-        if delegate != nil {
-            delegate!.locationSearchBar?(searchBar: self, didEditSearchTextWith: sender.text!)
-        }
+    func searchFieldEdited(_ sender: UITextField) {
+            delegate?.locationSearchBar?(searchBar: self, didEditSearchTextWith: sender.text!)
     }
     
     // MARK: - Location Manager Delegates
@@ -146,9 +170,7 @@ class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelega
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        if delegate != nil {
-            delegate!.locationSearchBar?(searchBar: self, didFailToFindLocationWith: error)
-        }
+            delegate?.locationSearchBar?(searchBar: self, didFailToFindLocationWith: error)
     }
     
     // MARK: - Geocoder Functionality
@@ -157,10 +179,10 @@ class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelega
             geoCoder.reverseGeocodeLocation(location!) { (placemarks, error) in
                 if error == nil && placemarks != nil && !placemarks!.isEmpty && self.delegate != nil {
                     let placemark = placemarks!.first
-                    self.delegate!.locationSearchBar?(searchBar: self, didFindLocationWith: location!.coordinate.latitude, lon: location!.coordinate.longitude, address: placemark!.addressDictionary)
+                    self.delegate?.locationSearchBar?(searchBar: self, didFindLocationWith: location!.coordinate.latitude, lon: location!.coordinate.longitude, address: placemark!.addressDictionary)
                     
                 } else {
-                    self.delegate!.locationSearchBar?(searchBar: self, didFindLocationWith: location!.coordinate.latitude, lon: location!.coordinate.longitude, address: nil)
+                    self.delegate?.locationSearchBar?(searchBar: self, didFindLocationWith: location!.coordinate.latitude, lon: location!.coordinate.longitude, address: nil)
                 }
             }
         }
@@ -168,10 +190,10 @@ class PRGLocationSearchBar: UIView, UITextFieldDelegate, CLLocationManagerDelega
             geoCoder.geocodeAddressString(searchString!, completionHandler: { (placemarks, error) in
                 if error == nil && placemarks != nil && !placemarks!.isEmpty && self.delegate != nil {
                     let placemark = placemarks!.first
-                    self.delegate!.locationSearchBar?(searchBar: self, didFindLocationWith: placemark!.location!.coordinate.latitude, lon: placemark!.location!.coordinate.longitude, address: placemark!.addressDictionary)
+                    self.delegate?.locationSearchBar?(searchBar: self, didFindLocationWith: placemark!.location!.coordinate.latitude, lon: placemark!.location!.coordinate.longitude, address: placemark!.addressDictionary)
                     
                 } else {
-                    self.delegate!.locationSearchBar?(searchBar: self, didFailToFindLocationWith: error!)
+                    self.delegate?.locationSearchBar?(searchBar: self, didFailToFindLocationWith: error!)
                 }
                 
             })
