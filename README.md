@@ -50,9 +50,6 @@ func locationSearchBar(searchBar: PRGLocationSearchBar, didFailToFindLocationWit
     print(error.localizedDescription)
 }
 ```
-Contact
--------
-jspiropoulos@programize.com
 
 License
 ------------
